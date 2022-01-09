@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import { parseQuestions, ISurvey } from "./useServey.utils";
 import { useParams } from "react-router";
 
-const BASE_URL = `http://localhost:8000`;
+const BASE_URL = `https://blijfaanz-demo.herokuapp.com`;
 
 interface SurveyRouteParams {
   questionnaireId: string;

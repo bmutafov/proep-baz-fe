@@ -173,7 +173,7 @@ const Survey: React.FC = () => {
     console.log("🚀 ~ submit ~ payload", payload);
 
     const response = await axios.post(
-      "http://localhost:8000/api/answerlist/",
+      "https://blijfaanz-demo.herokuapp.com/api/answerlist/",
       payload
     );
   };
