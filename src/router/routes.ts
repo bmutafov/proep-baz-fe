@@ -1,4 +1,5 @@
 import Dashboard from "../pages/Dashboard";
+import Page404 from "../pages/Page404";
 import Survey from "../pages/Survey";
 
 export interface AppRoute {
@@ -15,6 +16,10 @@ const routes: AppRoute[] = [
   {
     path: "/dashboard",
     component: Dashboard,
+  },
+  {
+    path: "/404",
+    component: Page404,
   },
 ];
 
