@@ -1,3 +1,4 @@
+import Dashboard from "../pages/Dashboard";
 import Survey from "../pages/Survey";
 
 export interface AppRoute {
@@ -10,6 +11,10 @@ const routes: AppRoute[] = [
   {
     path: "/questionnaire/:questionnaireId",
     component: Survey,
+  },
+  {
+    path: "/dashboard",
+    component: Dashboard,
   },
 ];
 
