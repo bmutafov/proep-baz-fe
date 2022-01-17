@@ -24,7 +24,11 @@ export interface ISurvey {
 }
 
 const exportOptions = (choices: string) => {
-  return choices.split("\r\n");
+  if(choices.includes("\r\n")) {
+    return choices.split("\r\n");
+  }
+  
+  return choices.split("\n");
 };
 
 export const parseQuestions = (surveyResponse: ISurvey): QuestionValue[] => {
